@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passer la commande - Boulangerie Délice</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Boulangerie Délice</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="panier.html">Panier</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Passer la commande</h2>
+        <form action="confirmation.html" method="post" class="form-commande">
+            <fieldset><legend>Informations personnelles</legend>
+                <label for="nom">Nom :</label><input type="text" id="nom" name="nom" required>
+                <label for="prenom">Prénom :</label><input type="text" id="prenom" name="prenom" required>
+                <label for="email">Email :</label><input type="email" id="email" name="email" required>
+                <label for="telephone">Téléphone :</label><input type="tel" id="telephone" name="telephone" required>
+            </fieldset>
+            <fieldset><legend>Adresse de livraison</legend>
+                <label for="adresse">Adresse :</label><input type="text" id="adresse" name="adresse" required>
+                <label for="ville">Ville :</label><input type="text" id="ville" name="ville" required>
+                <label for="codepostal">Code postal :</label><input type="text" id="codepostal" name="codepostal" required>
+            </fieldset>
+            <fieldset><legend>Moyen de paiement</legend>
+                <label><input type="radio" name="paiement" value="livraison" checked> Paiement à la livraison</label><br>
+                <label><input type="radio" name="paiement" value="mobile"> Mobile Money</label>
+            </fieldset>
+            <button type="submit" class="btn">Valider la commande</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Boulangerie Délice. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

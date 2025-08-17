@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff8f0;
+    color: #333;
+}
+header {
+    background: #ffb347;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    background: #ff6347;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+nav a:hover, nav a.active {
+    background: #e5533d;
+}
+main {
+    padding: 20px;
+}
+.produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+.produit {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 8px;
+}
+.produit img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.form-commande, .form-auth, .form-contact {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-commande fieldset, .form-auth, .form-contact {
+    border: none;
+}
+.form-commande legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+.form-commande label, .form-auth label, .form-contact label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.form-commande input[type="text"], .form-commande input[type="email"], .form-commande input[type="tel"], .form-auth input, .form-contact input, .form-contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.table-panier {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.table-panier th, .table-panier td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.table-panier th {
+    background-color: #ffb347;
+    color: #fff;
+}
+.table-panier input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn, .btn-supprimer {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn {
+    background: #ff6347;
+    color: #fff;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #e5533d;
+}
+.btn-supprimer {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.btn-supprimer:hover {
+    background-color: #c0392b;
+}
+.total-panier {
+    text-align: right;
+    margin-top: 20px;
+}
